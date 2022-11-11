@@ -7,6 +7,8 @@
 @import url(./css/input.css);
 @import url(./css/delete.css);
 @import url(./css/modal.css);
+@import url(./css/addList.css);
+
 @import url('https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
 :root{
@@ -17,6 +19,7 @@
   --C2:#DEDEDE;
   --blue:#026AA7;
   --dark-blue:#172B4D;
+  --light-blue:#1994db;
   --dark-purple:#9b71cf;
   --purple:#BB9AE3;
   --rose:#E4BCB9;
@@ -25,5 +28,5 @@
   --grey:#505F79;
   --grey-box:#EBECF0;
   
-
+  
 }

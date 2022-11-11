@@ -1,0 +1,13 @@
+.addListButton{
+  background-color: var(--light-blue) ;
+  border: transparent;
+  border-radius: 5px;
+  color: var(--white);
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: 15px;
+  width: 350px;
+  height: 55px;
+  text-align: left;
+  cursor: pointer;
+}

@@ -1,17 +1,16 @@
-.plus{
+.plus {
   display: inline;
   background-color: var(--grey-box);
   border: transparent;
   color: var(--C5);
   cursor: pointer;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
   margin-bottom: 10px;
- 
 }
 
-.plus:hover{
+.plus:hover {
   background-color: var(--C2);
   padding: 5px 15px;
   border-radius: 3px;
@@ -19,26 +18,23 @@
   text-align: left;
 }
 
-
-
-.input{
+.input {
   border: transparent;
   border-radius: 5px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   height: 90px;
   padding: 15px;
   width: 380px;
   font-size: 1.2rem;
   font-weight: 300;
-  color:#42526E ;
-  
+  color: #42526e;
 }
-.input:focus{
+.input:focus {
   border: transparent;
 }
 
-.addButton{
-  background-color: var(--blue) ;
+.addButton {
+  background-color: var(--blue);
   border: transparent;
   border-radius: 5px;
   color: var(--white);
@@ -49,8 +45,26 @@
   cursor: pointer;
 }
 
-.title_h3{
-  
+.title_h3 {
   font-size: 1.2rem;
   color: var(--dark-blue);
+}
+
+.inputTitleList {
+  background-color: var(--white) !important;
+  border: transparent;
+  border-radius: 5px;
+  color: var(--white) !important;
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: 5px;
+  width: 350px;
+  height: 100px !important;
+  text-align: left;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.writteTitle{
+  border: 3px solid var(--blue);
 }

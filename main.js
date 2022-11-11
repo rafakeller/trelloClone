@@ -1,6 +1,7 @@
 "use strict"
 
 import { addItem } from "./functions/addItem.js";
+import { addList } from "./functions/addList.js";
 import { createInput } from "./functions/createInput.js";
 
 
@@ -13,8 +14,9 @@ addCard.addEventListener("click", () => {
   createInput(addCard,form)
   addItem(form)
 
-  
- 
 });
+
+addList()
+
 
 
