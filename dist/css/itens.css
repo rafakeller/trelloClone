@@ -1,0 +1,41 @@
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.list_box{
+  margin: 20px 30px;
+}
+.list{
+  align-items:flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+
+.item{
+  display: flex;
+  align-items: center;
+  background-color: #ffffff ;
+  border: transparent;
+  border-radius: 5px;
+  color: var(--white);
+  height: auto;
+  justify-content: space-between;
+  width: 380px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: 13px;
+  color: var(--dark-blue);
+ 
+}
+
+.item:last-child{
+  margin-bottom: 10px;
+}
+.item:hover{
+ background-color: var(--white);
+ cursor: pointer;
+ 
+}

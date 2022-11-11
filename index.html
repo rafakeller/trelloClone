@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./dist/styles.css">
+  
+  <title>Trello Clone</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header_content">
+     
+      <div class="logo_content">
+        <button class="button menu_icon"><img class="menu_iconImg" src="./dist/img/menuHamb.png" alt=""></button>
+        <img class="logo" src="./dist/img/logo.png" alt="logo">
+        <h1 class="title_h1">Trello</h1>
+      </div>
+      <input class="input_search" type="text" placeholder="Pesquisar">
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="main_content">
+      <article class="menu_burguer"></article>
+
+      <div class="list_content">
+        <h2 class="title_h2">Kanban Quadro Modelo</h2>
+        <ul class="tabs">
+          <li class="tab routine">Rotina</li>
+          
+        </ul>
+        <div class="list_box">
+          <h3 class="title_h3">A Fazer</h3>
+          <div class="list_modalBox" data-modal>
+            
+            <ul class="list" data-list></ul>
+            <form action="" class="form" data-form></form>
+            <button class="plus" data-add>+  Adicionar um cartão</button>
+          </div>
+          
+
+
+
+         
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+
+</body>
+<script type="module" src="./main.js"></script>
+
+</html>

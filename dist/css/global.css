@@ -1,0 +1,23 @@
+
+*{
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+.title_h2{
+  font-family: 'Amaranth', sans-serif;
+  font-size: 2rem;
+  margin: 30px auto 100px 30px;
+}
+
+.title_h3{
+ font-size: 1.3rem;
+ margin-bottom: 15px;
+}
+ .main_content{
+  display: flex;
+  flex-direction: row;
+ 
+ }
+

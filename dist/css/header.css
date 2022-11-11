@@ -1,0 +1,48 @@
+.header{
+  background-color: var(--rose);
+}
+
+.header_content{
+  align-items: center;
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+}
+
+.menu_iconImg{
+  margin: 10px 10px;
+  width: 25px;
+}
+.menu_icon{
+  background-color: var(--rose);
+  border: transparent;
+}
+.logo_content{
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+.logo{
+  height: 20px;
+  width: 20px;
+}
+
+.title_h1{
+  color: var(--grey);
+  font-family: 'Amaranth', sans-serif ;
+  font-size: 30px;
+}
+
+.input_search{
+  background-color: var(--rose-light);
+  border: transparent;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  height: 40px;
+  margin-right: 30px;
+  padding-left: 45px;
+  width: 300px;
+  
+}

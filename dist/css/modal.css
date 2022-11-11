@@ -1,0 +1,21 @@
+.list_box{
+  background-color: var(--grey-box);
+  border-radius: 3px;
+  height: auto;
+  width: 410px;
+  padding: 25px 15px;
+}
+
+
+.modalInput{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+.modalButton{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}

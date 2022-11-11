@@ -1,0 +1,22 @@
+.deleteButton{
+
+  color: var(--C5);
+  font-size: 1.3rem;
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+  
+}
+
+
+.deleteInput{
+  font-size: 1.5rem;
+  color: var(--C5);
+  font-weight: 400;
+  cursor: pointer;
+
+}
+
+.deleteInput:hover{
+  color: var(--dark-blue);
+}

@@ -1,0 +1,29 @@
+@import url(./css/reset.css);
+@import url(./css/global.css);
+@import url(./css/header.css);
+@import url(./css/tabs.css);
+@import url(./css/menuBurguer.css);
+@import url(./css/itens.css);
+@import url(./css/input.css);
+@import url(./css/delete.css);
+@import url(./css/modal.css);
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+:root{
+  --white:#F4F5F7;
+  --black:#141414;
+  --C5:#4D5C76;
+  --C4:#AFAFAF;
+  --C2:#DEDEDE;
+  --blue:#026AA7;
+  --dark-blue:#172B4D;
+  --dark-purple:#9b71cf;
+  --purple:#BB9AE3;
+  --rose:#E4BCB9;
+  --rose-light:#e9cfcd;
+  --medium-rose:#F0B6E3;
+  --grey:#505F79;
+  --grey-box:#EBECF0;
+  
+
+}
