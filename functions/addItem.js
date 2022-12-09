@@ -1,40 +1,46 @@
-"use stricit";
+"use strict";
 
-import { createItem } from "./createItem.js";
-import { inputItem } from "./createInput.js";
-export const itens = JSON.parse(localStorage.getItem("itens")) || [];
+import { clearList } from "./clearList.js";
 
-itens.forEach((element) => {
-  createItem(element);
-  
-});
+import { itens, loadItens } from "./loadItens.js";
 
-export const addItem = (formSubmit) => {
+export const addItem = (buttonAddCard, formSubmit) => {
+ 
+ 
+
   formSubmit.addEventListener("submit", (event) => {
     event.preventDefault();
 
     const itemName = event.target.elements["nameItem"];
+    const idForm = event.target.getAttribute("id");
+    
+    
 
     const currentItem = {
       "name": itemName.value,
+      "list": idForm
     };
-    currentItem.id = itens[itens.length - 1] ? itens[itens.length - 1].id + 1: 0;
+
+    currentItem.id = itens[itens.length - 1] ? itens[itens.length - 1].id + 1 : 0;
+    itens.push(currentItem);
+
     
-    if (inputItem.value == "") {
-    } else {
-      createItem(currentItem);
-
-      itens.push(currentItem);
-      
-      
       localStorage.setItem("itens", JSON.stringify(itens)); //localStorage só guarda strigs por isso precisei converter
+      clearList();
+      loadItens();
 
-      inputItem.value = "";
-    }
+      buttonAddCard.value = "";
+    
   });
 };
 
+/*itens.forEach((element, ulList) => {
+  createItem(element, ulList);
 
-
-
-
+  map - array
+  reduce
+  spread operator
+  chaining operator
+  operador ternário
+  
+}); */

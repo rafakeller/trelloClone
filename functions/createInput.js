@@ -1,44 +1,43 @@
 "use strict";
 
-import { deleteInput } from "../componentes/deleteInput.js";
+import { hideInput } from "../componentes/hideInput.js";
 
-export const inputItem = document.createElement("input");
-const form = document.querySelector("[data-form]");
 
-export const createInput = (addCard, form) => {
+
+export const createInput = (buttonAddCard, form) => {
+  buttonAddCard.style.display = "none";
+
+  const modalInput = document.createElement("div");
+  modalInput.classList.add("modalInput");
+
+  const input = document.createElement("input");
+  input.classList.add("input"); //é o input
+  input.placeholder = "Insira um nome para este cartão...";
+  input.name = "nameItem";
+  input.type = "text";
   
-  addCard.style.display = "none"
+  input.focus();
 
-  const modalInput = document.createElement("div")
-  modalInput.classList.add("modalInput")
+  const modalButton_addCard = document.createElement("div");
+  modalButton_addCard.classList.add("modalButton");
 
-  inputItem.classList.add("input");
-  inputItem.placeholder = "Insira um titulo para este cartão...";
-  inputItem.name = "nameItem";
-  inputItem.type = "text";
-  
-  const modalButton = document.createElement("div")
-  modalButton.classList.add("modalButton")
+  const addCardButton = document.createElement("input"); //é um input botão kkkk só p eu poder colocar type=submit
+  addCardButton.classList.add("addButton");
+  addCardButton.type = "submit";
+  addCardButton.value = "Adicionar Cartão";
 
-  const addInputButton = document.createElement("input");
-  addInputButton.classList.add("addButton");
-  addInputButton.type = "submit";
-  addInputButton.value = "Adicionar Cartão";
-
-  const deleteInputButton = document.createElement("span")
-  deleteInputButton.classList.add("deleteInput")
-  deleteInputButton.dataset.deleteinput = "";
-  deleteInputButton.innerText = "X"
+  const hideInputButton = document.createElement("span");
+  hideInputButton.classList.add("deleteInput");
+  hideInputButton.dataset.deleteinput = "";
+  hideInputButton.innerText = "X";
 
   form.appendChild(modalInput);
-  modalInput.appendChild(inputItem)
-  modalInput.appendChild(modalButton)
-  modalButton.appendChild(addInputButton)
-  modalButton.appendChild(deleteInputButton)
-  
-  inputItem.focus()
-  
-  deleteInput(addCard)
+  modalInput.appendChild(input);
+  modalInput.appendChild(modalButton_addCard);
+  modalButton_addCard.appendChild(addCardButton);
+  modalButton_addCard.appendChild(hideInputButton);
 
- 
+  
+
+  hideInput(buttonAddCard, hideInputButton);
 };

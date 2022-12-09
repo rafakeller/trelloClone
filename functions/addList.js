@@ -1,28 +1,39 @@
 "use strict";
 
-import { titleList } from "./titleList.js";
+import {
+  addInputBox,
+  buttonAddTitle,
+  writteTitle,
+} from "../componentes/addInputBox.js";
+
+import { createList} from "./createList.js";
+import { saveList } from "./saveList.js";
+
+export const addListButton = document.querySelector("[data-addList]");
+ 
+
 
 export const addList = () => {
-  const addListButton = document.querySelector("[data-addList]");
-
-  addListButton.onclick = () => {
-    addListButton.classList.add("inputTitleList");
-
-    const writteTitle = document.createElement("input");
-    writteTitle.classList.add("writteTitle");
-    writteTitle.placeholder = "Insira o título da lista...";
-
-    const addTitleList = document.createElement("button");
-    addTitleList.classList.add("addButton");
-    addTitleList.innerText = "Adicionar Lista";
-
-    addListButton.appendChild(writteTitle);
-    addListButton.appendChild(addTitleList);
-
-    addTitleList.addEventListener("click", ()=>{
-      titleList(writteTitle.value)
-    })
-  };
 
   
+  addListButton.addEventListener("click", () => {
+    addInputBox(addListButton);
+
+    const addTitle = document.querySelector(".addButton");
+    
+ 
+    addTitle.onclick = () => {
+
+        if(writteTitle.value !== ""){
+          createList(writteTitle.value);
+          saveList(writteTitle);
+          writteTitle.value = ""; //só p nao deixar o nome da lista  ali no input depois de ser adicionada
+        }
+      
+      
+    };
+  });
 };
+// buttonAddTitle.onclick = () => {
+//   listContent.innerHTML = showButtonAddCard();
+// };

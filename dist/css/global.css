@@ -12,12 +12,21 @@
 }
 
 .title_h3{
- font-size: 1.3rem;
- margin-bottom: 15px;
-}
- .main_content{
-  display: flex;
-  flex-direction: row;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: black;
  
  }
 
+ .main_content{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.menu_burguer{
+  border: 2px solid var(--C2) ;
+  height: 100vh;
+  width: 200px;
+  
+}

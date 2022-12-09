@@ -1,8 +1,12 @@
-
+.list_content{
+  display: flex;
+  flex-direction: row;
+}
 
 
 .list_box{
   margin: 20px 30px;
+  width: 300px;
 }
 .list{
   align-items:flex-start;
@@ -19,17 +23,19 @@
 .item{
   display: flex;
   align-items: center;
-  background-color: #ffffff ;
+  background-color:var(--medium-rose) ;
   border: transparent;
   border-radius: 5px;
   color: var(--white);
   height: auto;
   justify-content: space-between;
-  width: 380px;
+  width: 320px;
+  height: 75px;
   font-size: 1.2rem;
   font-weight: 300;
   padding: 13px;
   color: var(--dark-blue);
+  text-align: end;
  
 }
 
