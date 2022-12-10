@@ -1,0 +1,64 @@
+.list_content {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.list_box {
+ margin-top: 10px;
+ background-color: var(--C2);
+ border-radius: 3px;
+ padding: 10px 10px 0 10px;
+ height: auto;
+
+}
+
+.title_h3 {
+  font-size: 1em;
+  color: var(--dark-blue);
+  text-transform: capitalize;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  
+}
+.modalInput {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.input {
+  border: transparent;
+  border-radius: 3px;
+  font-family: "Roboto", sans-serif;
+  padding: 15px;
+  width: 16em;
+  font-size: 0.9em;
+  font-weight: 300;
+  color: #42526e;
+}
+
+.addButton {
+  background-color: var(--blue);
+  border: transparent;
+  border-radius: 3px;
+  color: var(--white);
+  font-size: 1em;
+  width: 9em;
+  height: 2em;
+  cursor: pointer;
+  margin-bottom: 10px;
+  
+}
+.deleteInput {
+  font-size: 1.2em;
+  color: var(--C5);
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.deleteInput:hover {
+  color: var(--dark-blue);
+}

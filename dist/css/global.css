@@ -1,32 +1,19 @@
-
-*{
+body {
+  background-color: var(--white);
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-  
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  min-height: 100vh;
 }
 
-.title_h2{
-  font-family: 'Amaranth', sans-serif;
-  font-size: 2rem;
-  margin: 30px auto 100px 30px;
-}
-
-.title_h3{
-  font-size: 1.3rem;
-  margin-bottom: 15px;
-  color: black;
- 
- }
-
- .main_content{
+.main_content {
   display: flex;
   flex-direction: column;
-
-}
-
-.menu_burguer{
-  border: 2px solid var(--C2) ;
+  background-color: #0079bf;
   height: 100vh;
-  width: 200px;
-  
 }
+
+
+
+
+

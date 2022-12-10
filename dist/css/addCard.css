@@ -1,0 +1,12 @@
+.plus {
+  display: inline;
+  background-color: var(--C2);
+  border: transparent;
+  color: var(--C5);
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  margin-bottom: 10px;
+  margin-top: 7px;
+}

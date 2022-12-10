@@ -1,8 +1,0 @@
-.tabs{
-  border-bottom: 2px solid var(--C2) ;
-  display: flex;
-  font-size: 25px;
-  gap: 60px;
-  margin-left: 30px;
-  text-align: right;
-}
