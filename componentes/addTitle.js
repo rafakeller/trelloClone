@@ -1,6 +1,6 @@
 "use strict"
 
-export const addTitle = (title, placeH3)=>{
-  placeH3.innerText = title;
+export const addTitle = (title, h3)=>{
+  h3.innerText = title;
 
 }

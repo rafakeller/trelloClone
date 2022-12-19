@@ -13,7 +13,7 @@ export const addCard = ( button, formItens) => {
     createInput(button, formItens);
 
     
-    addItem(button, formItens);
+    addItem( formItens);
     
     
   };

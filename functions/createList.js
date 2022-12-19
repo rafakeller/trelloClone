@@ -1,14 +1,12 @@
 "use strict"
 
-import { writteTitle } from "../componentes/addInputBox.js";
 import { addTitle } from "../componentes/addTitle.js";
 import { addCard } from "./addCard.js";
 
-
-
 export const createList = (title) => {
   const listContent = document.querySelector("[data-content]");
-
+  
+  
   const modalList = document.createElement("div");
   modalList.classList.add("list_box");
 
@@ -29,21 +27,21 @@ export const createList = (title) => {
   form.classList.add("form");
   form.dataset.form = ""; //formulario
 
-  const buttonAddCard = document.createElement("button");
-  buttonAddCard.classList.add("plus");
-  buttonAddCard.innerText = "+  Adicionar um cartão";
-  buttonAddCard.id = "plus";
+  const addCardButton = document.createElement("button");
+  addCardButton.classList.add("plus");
+  addCardButton.innerText = "+  Adicionar um cartão";
+  addCardButton.id = "plus";
 
   listContent.appendChild(modalList);
   modalList.appendChild(titlePlace);
   modalList.appendChild(modalItens);
   modalItens.appendChild(list);
   modalItens.appendChild(form);
-  modalItens.appendChild(buttonAddCard);
+  modalItens.appendChild(addCardButton);
   
   addTitle(title, titlePlace);
   
-  addCard( buttonAddCard, form);
+  addCard( addCardButton, form);
 
   
 };

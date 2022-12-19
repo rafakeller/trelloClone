@@ -1,16 +1,29 @@
 .list_content {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   gap: 10px;
+  flex-wrap: nowrap;
+  margin: 0 25px;
+  justify-content: left;
+  
+  
 }
 
 .list_box {
- margin-top: 10px;
+  display: block;
  background-color: var(--C2);
  border-radius: 3px;
- padding: 10px 10px 0 10px;
- height: auto;
+ padding: 18px 0;
+ min-height: 5em;
+ max-height: auto;
+ width: 17.5em;
+ 
 
+}
+
+
+.list{
+  padding: 8px;
 }
 
 .title_h3 {
@@ -34,6 +47,7 @@
   border-radius: 3px;
   font-family: "Roboto", sans-serif;
   padding: 15px;
+  height: 2.3em;
   width: 16em;
   font-size: 0.9em;
   font-weight: 300;
@@ -45,11 +59,12 @@
   border: transparent;
   border-radius: 3px;
   color: var(--white);
-  font-size: 1em;
-  width: 9em;
-  height: 2em;
+  font-size: 0.7em;
+  width: 8em;
+  height: 2.3em;
   cursor: pointer;
-  margin-bottom: 10px;
+  font-weight: thin;
+  
   
 }
 .deleteInput {

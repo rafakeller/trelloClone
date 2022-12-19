@@ -5,6 +5,7 @@ export const createItem = (item, itemList) => {
   newItem.classList.add("item");
   newItem.innerHTML = item.name;
   newItem.dataset.id = item.id;
+  
   newItem.appendChild(deleteItemButton(item.id));
   itemList.appendChild(newItem); //por que...o content ta nulo kct
   

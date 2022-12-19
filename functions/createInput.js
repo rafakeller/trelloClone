@@ -13,6 +13,7 @@ export const createInput = (buttonAddCard, form) => {
   const input = document.createElement("input");
   input.classList.add("input"); //é o input
   input.placeholder = "Insira um nome para este cartão...";
+  input.dataset.input = "";
   input.name = "nameItem";
   input.type = "text";
   
@@ -21,10 +22,10 @@ export const createInput = (buttonAddCard, form) => {
   const modalButton_addCard = document.createElement("div");
   modalButton_addCard.classList.add("modalButton");
 
-  const addCardButton = document.createElement("input"); //é um input botão kkkk só p eu poder colocar type=submit
-  addCardButton.classList.add("addButton");
-  addCardButton.type = "submit";
-  addCardButton.value = "Adicionar Cartão";
+  const addNewItem = document.createElement("input"); //é um input botão kkkk só p eu poder colocar type=submit
+  addNewItem.classList.add("addButton");
+  addNewItem.type = "submit";
+  addNewItem.value = "Adicionar Cartão";
 
   const hideInputButton = document.createElement("span");
   hideInputButton.classList.add("deleteInput");
@@ -34,7 +35,7 @@ export const createInput = (buttonAddCard, form) => {
   form.appendChild(modalInput);
   modalInput.appendChild(input);
   modalInput.appendChild(modalButton_addCard);
-  modalButton_addCard.appendChild(addCardButton);
+  modalButton_addCard.appendChild(addNewItem);
   modalButton_addCard.appendChild(hideInputButton);
 
   

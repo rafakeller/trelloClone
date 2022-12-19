@@ -6,7 +6,7 @@
   border-radius: 3px;
   color: var(--white);
   justify-content: space-between;
-  width: 15em;
+  width: 16em;
   height: 0.5em;
   font-size: 1em;
   font-weight: 300;
@@ -27,7 +27,7 @@
 
 .deleteButton {
   color: var(--dark-blue);
-  font-size: 0.8em;
+  font-size: 1.5em;
   background-color: transparent;
   border: transparent;
   cursor: pointer;

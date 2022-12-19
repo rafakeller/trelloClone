@@ -1,18 +1,15 @@
 "use strict";
 
 
-
-export const hideInput = (addCard, deleteButton) => {
+export const hideInput = (addCard, hideInputButton) => {
   
 
-  deleteButton.onclick = () => {
-    const elementoAvo = deleteButton.parentElement.parentNode;
+  hideInputButton.onclick = () => {
+    const elementoAvo = hideInputButton.parentElement.parentNode;
     elementoAvo.remove();
 
     addCard.style.display = "inline";
   };
+  
 };
 
-export const deleteInputList = (inputButton)=>{
-  inputButton.classList.remove("inputTitleList")
-}

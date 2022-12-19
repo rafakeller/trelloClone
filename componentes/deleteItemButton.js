@@ -1,5 +1,6 @@
 "use strict";
 
+import { deleteInputBox } from "./deleteInputBox.js";
 import { deleteItem } from "./deleteItem.js";
 
 export const deleteItemButton = (id) => {
@@ -7,8 +8,17 @@ export const deleteItemButton = (id) => {
   buttonXis.classList.add("deleteButton");
   buttonXis.innerText = "x";
 
+  
+
   buttonXis.onclick = () => {
-    deleteItem(buttonXis.parentNode, id);
+    const elementoPai = buttonXis.parentNode;
+    const elementoAvo = buttonXis.parentNode.parentElement;
+
+    if (elementoPai.classList[0] === "item") {
+      deleteItem(elementoPai, id);
+    } else {
+      deleteInputBox(elementoAvo);
+    }
   };
 
   return buttonXis;
